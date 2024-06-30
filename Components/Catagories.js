@@ -8,7 +8,9 @@ const Catagories = () => {
     contentContainerStyle={{paddingBottom:15,paddingTop:10}}
     >
       {/* Catagory Cards */}
-      <CatagoryCard></CatagoryCard>
+      <CatagoryCard imageUrl="https://i.ibb.co/L6zYXjL/food.webp" title="Testing 1"></CatagoryCard>
+      <CatagoryCard imageUrl="https://i.ibb.co/L6zYXjL/food.webp" title="Testing 2"></CatagoryCard>
+      <CatagoryCard imageUrl="https://i.ibb.co/L6zYXjL/food.webp" title="Testing 3"></CatagoryCard>
     </ScrollView>
   )
 }
