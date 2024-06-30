@@ -78,9 +78,19 @@ const Home = () => {
 
         {/* Features rows */}
         <FeaturedRow
+          id="1"
           title={"Offer near you!"}
           description="Paid placements from our partner"
-          featuredCategory="featured"
+        ></FeaturedRow>
+        <FeaturedRow
+          id="2"
+          title={"Featured"}
+          description="Why not support your local food"
+        ></FeaturedRow>
+        <FeaturedRow
+          id="3"
+          title={"Tasty Discount"}
+          description="Paid placements from our partner"
         ></FeaturedRow>
       </ScrollView>
     </SafeAreaView>
