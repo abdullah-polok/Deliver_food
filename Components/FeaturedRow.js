@@ -3,7 +3,7 @@ import React from "react";
 import tw from "twrnc";
 import { ArrowRightIcon } from "react-native-heroicons/solid";
 import RestaurentCards from "./RestaurentCards";
-const FeaturedRow = ({ title, description, featuredCategory }) => {
+const FeaturedRow = ({ id, title, description, featuredCategory }) => {
   return (
     <SafeAreaView>
       <View style={tw`px-3 flex-row justify-between`}>
@@ -20,8 +20,16 @@ const FeaturedRow = ({ title, description, featuredCategory }) => {
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <RestaurentCards
-          title={"Nando's"}
           imageUrl="https://i.ibb.co/Wf2BHy5/vegan-plate-lunch-with-organic-vegetables.webp"
+          title="Wow Sushi"
+          id="123"
+          ratings={4.5}
+          genre="Japanese"
+          address="123 Main St"
+          short_description="This is a test description"
+          dishes={[]}
+          longitude={20}
+          latitude={0}
         ></RestaurentCards>
         <RestaurentCards
           title={"Pado's"}
