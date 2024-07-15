@@ -7,7 +7,7 @@ const FeaturedRow = ({ id, title, description, featuredCategory }) => {
   return (
     <SafeAreaView>
       <View style={tw`px-3 flex-row justify-between`}>
-        <View>
+        <View style={tw`px-3 mt-4`}>
           <Text style={tw`text-lg font-bold`}>{title}</Text>
           <Text style={tw`text-gray-400 text-xs`}>{description}</Text>
         </View>
@@ -32,13 +32,40 @@ const FeaturedRow = ({ id, title, description, featuredCategory }) => {
           latitude={0}
         ></RestaurentCards>
         <RestaurentCards
-          title={"Pado's"}
           imageUrl="https://i.ibb.co/Wf2BHy5/vegan-plate-lunch-with-organic-vegetables.webp"
+          title="Wow Sushi"
+          id="123"
+          ratings={4.5}
+          genre="Japanese"
+          address="123 Main St"
+          short_description="This is a test description"
+          dishes={[]}
+          longitude={20}
+          latitude={0}
         ></RestaurentCards>
-
         <RestaurentCards
-          title={"Pado's"}
           imageUrl="https://i.ibb.co/Wf2BHy5/vegan-plate-lunch-with-organic-vegetables.webp"
+          title="Wow Sushi"
+          id="123"
+          ratings={4.5}
+          genre="Japanese"
+          address="123 Main St"
+          short_description="This is a test description"
+          dishes={[]}
+          longitude={20}
+          latitude={0}
+        ></RestaurentCards>
+        <RestaurentCards
+          imageUrl="https://i.ibb.co/Wf2BHy5/vegan-plate-lunch-with-organic-vegetables.webp"
+          title="Wow Sushi"
+          id="123"
+          ratings={4.5}
+          genre="Japanese"
+          address="123 Main St"
+          short_description="This is a test description"
+          dishes={[]}
+          longitude={20}
+          latitude={0}
         ></RestaurentCards>
       </ScrollView>
     </SafeAreaView>
