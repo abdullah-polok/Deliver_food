@@ -8,7 +8,7 @@ export default defineType({
     {
       name: 'name',
       type: 'string',
-      title: 'Restaurent name',
+      title: 'Restaurant name',
       validation: (Rule) => Rule.required(),
     },
     {
@@ -20,7 +20,7 @@ export default defineType({
     {
       name: 'image',
       type: 'image',
-      title: 'Image of the Restaurent',
+      title: 'Image of the Restaurant',
     },
     {
       name: 'lat',
@@ -35,7 +35,7 @@ export default defineType({
     {
       name: 'address',
       type: 'string',
-      title: 'Restaurent address',
+      title: 'Restaurant address',
       validation: (Rule) => Rule.required(),
     },
     {
@@ -47,8 +47,8 @@ export default defineType({
     },
     {
       name: 'type',
-      type: 'string',
-      title: 'reference',
+      type: 'reference',
+      title: 'Category',
       validation: (Rule) => Rule.required(),
       to: [{type: 'category'}],
     },

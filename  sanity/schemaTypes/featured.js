@@ -1,9 +1,7 @@
-import {defineField, defineType} from 'sanity'
-
-export default defineType({
+export default {
   name: 'featured',
   title: 'Featured Menu Catagories',
-  type: 'document',
+  type: 'featured',
   fields: [
     {
       name: 'name',
@@ -24,4 +22,4 @@ export default defineType({
       of: [{type: 'reference', to: [{type: 'restaurant'}]}],
     },
   ],
-})
+}
